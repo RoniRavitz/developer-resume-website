@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --dark-gray: #212121;
+  --light-gray: #e0e0e0;
+}
+body.light-mode {
+  --black: #ffffff;
+  --white: #000000;
+  --dark-gray: #e0e0e0;
+  --light-gray: #212121;
+}
+body.light-mode img {
+  --dark-gray: #212121;
+  filter: invert(100%);
+}
+body {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+p {
+  font-weight: 300;
+  line-height: 1.8;
+}
+a {
+  color: var(--white);
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+.nav-menu {
+  display: flex;
+  gap: 24px;
+  font-weight: 300;
+  list-style: none;
+}
+.nav-menu a {
+  color: var(--white);
+  text-decoration: none;
+}
+.hero-title {
+  font-size: 5vw;
+  font-weight: 600;
+  align-self: center;
+}
+.arrow-down-icon {
+  background-color: aqua;
+  stroke: #ffffff;
+}
+.about {
+  margin-top: 96px;
+  display: flex;
+  gap: 48px;
+}
+.about-title-div {
+  width: 40%;
+}
+.about-description-div {
+  width: 60%;
+}
+
+.about-description {
+  font-size: 20px;
+}
+.skills {
+  margin-top: 96px;
+  display: flex;
+  gap: 48px;
+}
+.skills-title-div {
+  width: 40%;
+}
+.skills-description-div {
+  width: 60%;
+}
+
+.skills-description {
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 20px;
+}
+.experiences {
+  margin-top: 200px;
+  display: flex;
+  gap: 48px;
+}
+.experiences-title-div {
+  width: 40%;
+}
+.experiences-item-div {
+  width: 60%;
+}
+
+.experience-item {
+  padding: 24px 0;
+  border: solid var(--light-gray);
+  border-width: 1px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.experience-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.position {
+  font-weight: 300;
+}
+.toolkit {
+  margin-top: 200px;
+}
+.toolkit-title {
+  text-align: center;
+}
+.toolkit-items {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.toolkit-items img {
+  width: 96px;
+  padding: 16px;
+  background-color: var(--dark-gray);
+  border-radius: 8px;
+}
+.projects {
+  margin-top: 200px;
+  display: flex;
+  gap: 48px;
+}
+.projects-title-div {
+  width: 40%;
+}
+.projects-item-div {
+  width: 60%;
+}
+.projects-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects-item-icon-div {
+  position: relative;
+}
+.projects-item-icon-div img {
+  padding: 8px;
+  background-color: var(--dark-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.projects-item-icon-div .minus-icon {
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+details[open] .projects-item-icon-div .minus-icon {
+  visibility: visible;
+}
+
+.projects-item {
+  padding: 24px 0;
+  border-top: solid var(--light-gray) 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.projects-item:last-of-type {
+  border-bottom: solid var(--light-gray) 1px;
+}
+summary {
+  display: block;
+  cursor: pointer;
+}
+.projects-item h4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.projects-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects-item-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--dark-gray);
+  border-radius: 16px;
+  text-decoration: none;
+}
+.projects-item-link img {
+  margin-bottom: -6px;
+  margin-left: 8px;
+}
+
+.education {
+  margin-top: 200px;
+  display: flex;
+  gap: 48px;
+}
+.education-title-div {
+  width: 40%;
+}
+.education-item-div {
+  width: 60%;
+}
+.education-item {
+  padding: 24px 0;
+  border-top: solid var(--light-gray) 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.education-item:last-of-type {
+  border-bottom: solid var(--light-gray) 1px;
+}
+.profession {
+  font-weight: 300;
+}
+
+.contact {
+  margin-top: 200px;
+}
+.contact-items {
+  padding: 96px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+}
+.contact-information {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  line-height: 1.8;
+}
+.contact-social {
+  display: flex;
+  gap: 16px;
+}
+/* .contact-items span{
+    line-height: 1.8;
+} */
+.contact-items a {
+  color: var(--white);
+  text-decoration: none;
+}
+.contact-items img {
+  padding: 8px;
+  background-color: var(--dark-gray);
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .nav-menu ul {
+    display: none;
+  }
+  .nav-menu ul:last-of-type {
+    display: initial;
+  }
+  .hero-title {
+    font-size: 9vw;
+    align-self: flex-start;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about-title-div {
+    width: 100%;
+  }
+  .about-description-div {
+    width: 100%;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+  .skills-title-div {
+    width: 100%;
+  }
+  .skills-description-div {
+    width: 100%;
+  }
+
+  .experiences {
+    flex-direction: column;
+  }
+  .experiences-title-div {
+    width: 100%;
+  }
+  .experiences-item-div {
+    width: 100%;
+  }
+  .toolkit-items {
+    gap: 16px;
+  }
+  .toolkit-items img {
+    width: 64px;
+    padding: 8px;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .projects-title-div {
+    width: 100%;
+  }
+  .projects-item-div {
+    width: 100%;
+  }
+  .education {
+    flex-direction: column;
+  }
+  .education-title-div {
+    width: 100%;
+  }
+  .education-item-div {
+    width: 100%;
+  }
+  .contact-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
