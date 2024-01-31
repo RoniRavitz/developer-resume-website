@@ -201,6 +201,7 @@ a {
   justify-content: space-between;
 }
 .projects-item-icon-div {
+  display: flex;
   position: relative;
 }
 .projects-item-icon-div img {
@@ -249,6 +250,7 @@ summary {
   text-decoration: none;
 }
 .projects-item-link img {
+  display: inline;
   margin-bottom: -6px;
   margin-left: 8px;
 }
