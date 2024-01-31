@@ -1,3 +1,3 @@
-# Portfolio Template
+# developer resume website
 
-### A beautiful minimal and accessible portfolio template for Developers ✨.
+### A beautiful minimal open sourse resume website template for Developers.
