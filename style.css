@@ -1,9 +1,23 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 html {
+  font-size: 18px;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 :root {
@@ -31,11 +45,6 @@ body {
   font-size: 18px;
   font-family: "Inter", sans-serif;
 }
-img {
-  display: block;
-  max-inline-size: 100%;
-  block-size: auto;
-}
 h1,
 h2,
 h3,
@@ -43,7 +52,7 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 500;
 }
 h2 {
   font-size: 32px;
@@ -96,7 +105,7 @@ a {
 }
 .hero-title {
   font-size: 5vw;
-  font-weight: 600;
+  font-weight: 500;
   align-self: center;
 }
 .arrow-down-icon {
@@ -133,7 +142,7 @@ a {
 .skills-description {
   font-size: 20px;
   line-height: 1.8;
-  padding: 20px;
+  padding-left: 20px;
 }
 .experiences {
   margin-top: 200px;
@@ -201,7 +210,6 @@ a {
   justify-content: space-between;
 }
 .projects-item-icon-div {
-  display: flex;
   position: relative;
 }
 .projects-item-icon-div img {
@@ -250,7 +258,6 @@ summary {
   text-decoration: none;
 }
 .projects-item-link img {
-  display: inline;
   margin-bottom: -6px;
   margin-left: 8px;
 }
@@ -314,10 +321,10 @@ summary {
 }
 
 @media (max-width: 767px) {
-  .nav-menu ul {
+  .nav-menu li {
     display: none;
   }
-  .nav-menu ul:last-of-type {
+  .nav-menu li.nav-menu-item-contact {
     display: initial;
   }
   .hero-title {
