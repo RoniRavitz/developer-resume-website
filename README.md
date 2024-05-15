@@ -1,6 +1,6 @@
 # developer resume website
 
-###### A beautiful minimal open sourse resume website template for Developers.
+#### A beautiful minimal open sourse resume website template for Developers.
 
 Visit the website demo [website demo](https://roni-ravitz.netlify.app/resume/)
 
